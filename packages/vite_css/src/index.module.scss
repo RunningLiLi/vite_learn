@@ -1,5 +1,8 @@
-h1{
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+h1 {
   display: flex;
   color: $theme-color;
-  transform: translate(10px,10px);
+  transform: translate(10px, 10px);
 }
