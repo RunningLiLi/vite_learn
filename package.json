@@ -5,9 +5,14 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "format": "pnpx prettier --write packages"
+    "format": "pnpx prettier --write packages",
+    "prepare": "husky install",
+    "lint": "pnpm recursive run lint "
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "husky": "^8.0.3"
+  }
 }

@@ -3,7 +3,10 @@ lockfileVersion: 5.4
 importers:
 
   .:
-    specifiers: {}
+    specifiers:
+      husky: ^8.0.3
+    devDependencies:
+      husky: 8.0.3
 
   packages/vite_css:
     specifiers:
