@@ -13,6 +13,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@commitlint/cli": "^17.6.5",
+    "@commitlint/config-conventional": "^17.6.5",
+    "commitlint": "^17.6.5",
     "husky": "^8.0.3"
   },
   "dependencies": {
@@ -20,11 +23,7 @@
   },
   "lint-staged": {
     "**/*.{js,jsx,tsx,ts}": [
-      "npm run lint:script",
-      "git add ."
-    ],
-    "**/*.{scss,css}": [
-      "npm run lint:style",
+      "pnpm run lint",
       "git add ."
     ]
   }
