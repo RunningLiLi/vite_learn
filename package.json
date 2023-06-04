@@ -28,6 +28,10 @@
     "**/*.{js,jsx,tsx,ts}": [
       "pnpm run lint",
       "git add ."
+    ],
+    "**/*.{css,scss}": [
+      "pnpm --filter ./packages/vite_lint run lint:style",
+      "git add ."
     ]
   }
 }
