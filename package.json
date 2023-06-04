@@ -4,10 +4,13 @@
   "description": "",
   "main": "index.js",
   "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
     "format": "pnpx prettier --write packages",
     "prepare": "husky install",
-    "lint": "pnpm recursive run lint "
+    "lint": "pnpm --filter ./packages/* run lint"
   },
   "keywords": [],
   "author": "",
