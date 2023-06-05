@@ -18,11 +18,11 @@ function App() {
   }, []);
   return (
     <>
-      <div>
-        {Object.values(svgs).map(({ ReactComponent }) => {
-          return <ReactComponent />;
-        })}
-      </div>
+      {/*<div>*/}
+      {/*  {Object.values(svgs).map(({ ReactComponent }) => {*/}
+      {/*    return <ReactComponent />;*/}
+      {/*  })}*/}
+      {/*</div>*/}
       <div>
         {Object.values(svgs).map((item) => {
           const symbolId =

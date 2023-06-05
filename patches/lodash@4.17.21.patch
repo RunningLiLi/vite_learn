@@ -1,0 +1,13 @@
+diff --git a/_baseIsTypedArray.js b/_baseIsTypedArray.js
+index 1edb32ff3f283efca1e1bea08eece3f850dfb84e..cb275961b997b5333eaef0e7c51f481c5e0e267b 100644
+--- a/_baseIsTypedArray.js
++++ b/_baseIsTypedArray.js
+@@ -1,7 +1,7 @@
+ var baseGetTag = require('./_baseGetTag'),
+     isLength = require('./isLength'),
+     isObjectLike = require('./isObjectLike');
+-
++let a=1;
+ /** `Object#toString` result references. */
+ var argsTag = '[object Arguments]',
+     arrayTag = '[object Array]',
