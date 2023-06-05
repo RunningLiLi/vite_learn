@@ -10,7 +10,7 @@
   "scripts": {
     "format": "pnpx prettier --write packages",
     "prepare": "husky install",
-    "lint": "pnpm --filter ./packages/* run lint"
+    "lint": "pnpm --filter ./packages/@vite/ run lint"
   },
   "keywords": [],
   "author": "",
@@ -25,8 +25,8 @@
     "lint-staged": "^13.2.2"
   },
   "lint-staged": {
-    "**/*.{js,jsx,tsx,ts}": [
-      "pnpm run lint",
+    "vite*/*.{js,jsx,tsx,ts}": [
+      "eslint --fix",
       "git add ."
     ],
     "**/*.{css,scss}": [

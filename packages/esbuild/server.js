@@ -1,4 +1,4 @@
-const { build, context } = require("esbuild");
+const { context } = require("esbuild");
 
 function runBuild() {
   context({
