@@ -2,18 +2,18 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
-import { debounce } from "lodash";
+// import { debounce } from "lodash";
 
 function App() {
   const [count, setCount] = useState(0);
-  debounce(() => {});
-  import("lodash").then((res) => {
-    res.throttle(() => {});
-    res.add(1, 2);
-  });
-  import("react").then((res) => {
-    res.useEffect(() => {});
-  });
+  // debounce(() => {});
+  // import("lodash").then((res) => {
+  //   res.throttle(() => {});
+  //   res.add(1, 2);
+  // });
+  // import("react").then((res) => {
+  //   res.useEffect(() => {});
+  // });
   return (
     <>
       <div>
@@ -33,7 +33,7 @@ function App() {
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
       </div>
-      <p className="read-the-docs">test3223</p>
+      <p className="read-the-docs">test32223</p>
     </>
   );
 }

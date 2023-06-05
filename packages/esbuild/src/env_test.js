@@ -1,2 +1,2 @@
 import env from "env";
-console.log(env);
+console.log(env, "test");
