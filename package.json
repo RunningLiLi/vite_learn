@@ -25,7 +25,7 @@
     "lint-staged": "^13.2.2"
   },
   "lint-staged": {
-    "vite*/*.{js,jsx,tsx,ts}": [
+    "**/vite*/*.{js,jsx,tsx,ts}": [
       "eslint --fix",
       "git add ."
     ],
