@@ -27,7 +27,8 @@
   "lint-staged": {
     "**/vite*/*.{js,jsx,tsx,ts}": [
       "eslint --fix",
-      "git add ."
+      "git add .",
+      "echo 1"
     ],
     "**/*.{css,scss}": [
       "pnpm --filter ./packages/vite_lint run lint:style",
