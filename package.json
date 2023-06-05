@@ -10,7 +10,7 @@
   "scripts": {
     "format": "pnpx prettier --write packages",
     "prepare": "husky install",
-    "lint": "pnpm --filter ./packages/** run lint"
+    "lint": "pnpm --filter ./packages/* run lint"
   },
   "keywords": [],
   "author": "",
