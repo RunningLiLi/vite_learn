@@ -30,7 +30,7 @@ function App() {
       >
         hello windicss
       </h2>
-      <h2 className="bg-amber-200">hello tailwind</h2>
+      <h2 className="bg-amber-200">hello test global pattern</h2>
     </Wrapper>
   );
 }
