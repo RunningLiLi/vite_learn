@@ -25,7 +25,7 @@ const envPlugin: Plugin = {
 };
 build({
   outdir: "dist",
-  entryPoints: ["./src/env_test.js"],
+  entryPoints: ["../src/env_test.js"],
   bundle: true,
   plugins: [envPlugin],
   metafile: true,

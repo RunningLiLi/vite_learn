@@ -7077,17 +7077,9 @@ var unstable_createPortal$1 = reactDom.unstable_createPortal;
 var unstable_renderSubtreeIntoContainer$1 = reactDom.unstable_renderSubtreeIntoContainer;
 var version$1 = reactDom.version;
 
-// src/html_test.jsx
-function HtmlTest({ children }) {
-  return /* @__PURE__ */ react_default.createElement("div", null, /* @__PURE__ */ react_default.createElement("h1", null, "Hello world!"), /* @__PURE__ */ react_default.createElement("div", null, children));
-}
-
 // src/index.jsx
 var Greet = () => /* @__PURE__ */ react_default.createElement("h1", null, "Hello, lili!");
-render$1(
-  /* @__PURE__ */ react_default.createElement(HtmlTest, null, /* @__PURE__ */ react_default.createElement(Greet, null)),
-  document.getElementById("root")
-);
+render$1(/* @__PURE__ */ react_default.createElement(Greet, null), document.getElementById("root"));
 /*
 object-assign
 (c) Sindre Sorhus
