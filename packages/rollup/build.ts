@@ -17,7 +17,7 @@ rollup({
     globals: { "lodash-es": "_" },
   };
   res.generate(opt);
-  res.write(opt);
+  // res.write(opt);
   // res
   //   .generate({
   //     dir: "dist",
