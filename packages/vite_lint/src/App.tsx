@@ -24,7 +24,7 @@ function App() {
 					Edit <code>src/App.tsx</code> and save to test HMR
 				</p>
 			</div>
-			<p className="read-the-docs">test global pattern</p>
+			<p className="read-the-docs">test global pattern1</p>
 		</>
 	);
 }
