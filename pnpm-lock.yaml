@@ -77,6 +77,18 @@ importers:
         specifier: ^7.0.2
         version: 7.0.2(rollup@3.23.1)
 
+  packages/vite_HMR:
+    dependencies:
+      lodash:
+        specifier: ^4.17.21
+        version: 4.17.21(patch_hash=7lnv6v3a5kr5ucaz6to3f7lc4i)
+      lodash-es:
+        specifier: ^4.17.21
+        version: 4.17.21
+      vite:
+        specifier: ^4.3.9
+        version: 4.3.9(@types/node@20.2.5)(sass@1.62.1)
+
   packages/vite_assets:
     dependencies:
       react:

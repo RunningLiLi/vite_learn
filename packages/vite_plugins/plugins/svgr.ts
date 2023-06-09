@@ -2,6 +2,7 @@ import { Plugin } from "vite";
 import * as fs from "fs";
 import * as resolve from "resolve";
 import { transform } from "@svgr/core";
+import * as process from "process";
 interface SvgrOptions {
   defaultExport: "url" | "component";
 }
@@ -11,6 +12,16 @@ export default function viteSvgrPlugin(options: SvgrOptions): Plugin {
 
   return {
     name: "vite-plugin-svgr",
+    resolveId(id) {
+      if (!id.endsWith(".svg")) {
+        return id;
+      }
+      const idResolve = id.replace(".svg", ".jsx");
+      return {
+        id: idResolve,
+        meta: { idResolve: true },
+      };
+    },
     async transform(code, id) {
       // 1. 根据 id 入参过滤出 svg 资源；
 
@@ -31,7 +42,6 @@ export default function viteSvgrPlugin(options: SvgrOptions): Plugin {
         { plugins: ["@svgr/plugin-jsx"] },
         { componentName: "ReactComponent" }
       );
-      console.log(svgrResult == svg);
       // 4. 处理默认导出为 url 的情况
       let componentCode = svgrResult;
       if (defaultExport === "url") {
@@ -47,7 +57,6 @@ export default function viteSvgrPlugin(options: SvgrOptions): Plugin {
       const result = await esbuild.transform(componentCode, {
         loader: "jsx",
       });
-      console.log(result.code);
       return {
         code: result.code,
         map: null, // TODO
