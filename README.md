@@ -1,0 +1,2 @@
+# 学习vite深入浅出对应实操代码
+采用monorepe架构，每一节对应一个packages子项目
