@@ -27,6 +27,9 @@ export async function createSsrMiddleware(
     app.use(vite.middlewares);
   }
   return async (req, res, next) => {
+    if (req.originalUrl !== "/") {
+      return next();
+    }
     // SSR 的逻辑
     // 1. 加载服务端入口模块
     const { ServerEntry } = await loadSsrEntryModule(vite);
@@ -51,7 +54,7 @@ async function loadSsrEntryModule(vite: ViteDevServer | null) {
   // 开发环境下通过 no-bundle 方式加载
   else {
     const entryPath = path.join(cwd, "src/entry-server.tsx");
-    return vite!.ssrLoadModule(entryPath);
+    return vite?.ssrLoadModule(entryPath);
   }
 }
 async function preFetch() {
