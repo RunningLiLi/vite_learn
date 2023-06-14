@@ -2,7 +2,7 @@ import { defineConfig } from "vite";
 import federation from "@originjs/vite-plugin-federation";
 export default defineConfig({
   build: {
-    target: "es2015",
+    target: "esnext",
     minify: false,
   },
   plugins: [
@@ -12,6 +12,7 @@ export default defineConfig({
       exposes: {
         "./Counter": "./src/counter.ts",
       },
+      shared: ["lodash-es"],
     }),
   ],
 });

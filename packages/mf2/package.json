@@ -13,6 +13,7 @@
     "vite": "^4.3.9"
   },
   "dependencies": {
-    "@originjs/vite-plugin-federation": "^1.2.3"
+    "@originjs/vite-plugin-federation": "^1.2.3",
+    "lodash-es": "^4.17.21"
   }
 }

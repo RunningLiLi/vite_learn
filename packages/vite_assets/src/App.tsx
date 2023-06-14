@@ -3,6 +3,8 @@ import { ReactComponent as ReactLogo } from "@assets/react.svg";
 import reactLogo from "@assets/react.svg?raw";
 import viteLogo from "/vite.svg";
 import "./App.css";
+import { lazy } from "react";
+const Counter = lazy(() => import("./counte.tsx"));
 const svgs = import.meta.glob<{
   ReactComponent: React.FunctionComponent; //通过插件生产的组件svg
   default: string; //路径
@@ -18,6 +20,7 @@ function App() {
   }, []);
   return (
     <>
+      <Counter></Counter>
       {/*<div>*/}
       {/*  {Object.values(svgs).map(({ ReactComponent }) => {*/}
       {/*    return <ReactComponent />;*/}

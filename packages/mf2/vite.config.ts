@@ -16,9 +16,9 @@ export default defineConfig({
         mf1: {
           externalType: "url",
           external: "http://localhost:4173/assets/remoteEntry.js",
-          format: "systemjs",
         },
       },
+      shared: ["lodash-es"],
     }),
   ],
 });
