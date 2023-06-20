@@ -2,7 +2,7 @@
 
 ## 1.加载配置文件
 
-```
+```js
 // 这里的 config 是命令行指定的配置，如 vite --configFile=xxx
 let { configFile } = config
 if (configFile !== false) {
