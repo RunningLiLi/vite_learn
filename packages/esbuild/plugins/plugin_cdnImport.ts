@@ -15,6 +15,7 @@ export const cdnPlugin: Plugin = {
         namespace: "http-url",
       };
     });
+
     build.onLoad({ filter: /.*/, namespace: "http-url" }, (args) => {
       return new Promise((resolve, reject) => {
         function fetch(url: string) {
