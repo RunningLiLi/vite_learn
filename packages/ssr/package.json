@@ -1,7 +1,7 @@
 {
   "name": "ssr",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
     "dev": "nodemon --watch src/ssr-server --exec esno src/ssr-server/index.ts",
