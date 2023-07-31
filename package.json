@@ -19,7 +19,8 @@
     "@commitlint/cli": "^17.6.5",
     "@commitlint/config-conventional": "^17.6.5",
     "commitlint": "^17.6.5",
-    "husky": "^8.0.3"
+    "husky": "^8.0.3",
+    "lerna": "^7.1.4"
   },
   "dependencies": {
     "lint-staged": "^13.2.2"
